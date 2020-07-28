@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.header{
+    box-sizing: border-box;
+    background-image: url(../images/bg.jpg);
+    height:12em;
+    width: 20em;
+    background-repeat: no-repeat;
+    border: solid black 0.2em;
+    position: relative;
+
+}
+.clear{
+    position: absolute;
+    left:90%;
+    padding:0.5em;
+        
+
+}
+.clear i{
+    color: white;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px rgb(209, 189, 189);
+    transform: rotate(45deg);
+}
+#date{
+    color: white;
+    position: absolute;
+    top:85%;
+}
+.content{
+
+    /*background-color: rgb(234, 247, 250); */
+    width:20em;
+    height:15em;
+    max-height: 20em;
+    overflow: auto;
+    border: solid black 0.1em;
+    box-sizing: border-box;
+    
+
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.add-to-do{
+    height:2.5em;
+    width: 20em;
+    border: solid black 0.1em;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+.add-to-do input{
+    width:21.6em;
+    height: 2.5em;
+    
+}
+.add-to-do i{
+    color: #fcfcfd;
+    padding-left:3px;
+    margin: 0;
+      
+}
+.add-to-do i:hover{
+    cursor: pointer;
+
+}
+
+/* content*/
+
+
+.item{
+    width:20em;
+    height: 50px;
+    min-height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    
+}
+.item i.co{
+    position: absolute;
+    font-size: 30px;
+    top:20%;
+    left:2px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size:14px;
+    left:30px;
+    top:3px;
+    background-color: rgb(253, 253, 253);
+    max-width:18.5em;
+    padding-top: 0.5em;
+    height: auto;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.fa-check-circle{
+    position: absolute;
+    font-size:0.2em;
+    top:20%;
+    left:1px;
+    color:#6eb200;
+}
+.item i.de{
+    position: absolute;
+    font-size:20px;
+    left:90%;
+    top:25%;
+    
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+
+
+
